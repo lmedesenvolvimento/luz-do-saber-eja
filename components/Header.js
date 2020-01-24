@@ -47,9 +47,9 @@ const Header = () => (
                         <Link href='/contact' passHref>
                             <li className="contato">Contato</li>
                         </Link>
-                        {/* <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-home-page/contact' passHref>
+                        <Link href='https://lmedesenvolvimento.github.io/eja-luz-do-saber/contact' passHref>
                             <li className="contato">Contato</li>
-                        </Link> */}
+                        </Link>
                 </ul>
             </div>
         </div>
