@@ -11,11 +11,11 @@ export default function Index() {
                     <div className="container">
                         <div className="row banner-content">
                             <div className="col banner-left-content">
-                                <img src="static/Ilustracao.png" alt="Desenho de crianças estudando" width="522px" height="411px" />
+                                <img src="static/pessoas.png" alt="Desenho de crianças estudando" />
                             </div>
 
                             <div className="col banner-right-content">
-                                <h2>Os melhores jogos <br />e atividades para <br />aprender brincando!</h2>
+                                <h2>Atividades, jogos e exercícios <br /> de alfabetização e letramento</h2>
 
                                 <span className="section-text">Clique no botão abaixo para iniciar</span>
 
@@ -46,17 +46,17 @@ export default function Index() {
                     </div>
                     <div className="row">
                         <div className="col atividades-content">
-                            <img src="static/icon-jogos.png" alt="" />
+                            <img src="static/puzzle.png" alt="" />
                             <p>Jogos <br />Educativos</p>
                             <span className="section-text">Divirta-se e aprenda com jogos como quebra-cabeça, bingo e diversos outros disponíveis!</span>
                         </div>
                         <div className="col atividades-content">
-                            <img src="static/icon-divertidas.png" alt="" />
+                            <img src="static/book.png" alt="" />
                             <p>Atividades <br />Divertidas</p>
                             <span className="section-text">Resolva atividades desafiadoras, crie gibis e jornais e teste seus conhecimentos!</span>
                         </div>
                         <div className="col atividades-content">
-                            <img src="static/icon-personalizadas.png" alt="" />
+                            <img src="static/atividades.png" alt="" />
                             <p>Atividades Personalizadas</p>
                             <span className="section-text">Jogue ou faça as atividades escritas e editadas pelo seu professor!</span>
                         </div>
@@ -89,34 +89,53 @@ export default function Index() {
             </BaseLayout>
 
             <style jsx>{`
-                .section-text {
-                    color: #AEAEAE;
-                    font-size: 1.1em;
-                }
                 .banner {
                     font-family: 'Itim', cursive;
-                    background: url('static/BG_bannerCenario.png');
+                    background: 
+                        url('static/banner-transparency.png'),
+                        url('static/banner-blue.png');
+                    background-position: 
+                        left top,
+                        center top;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                 }
                 .banner-content {
+                    position: relative;
                     height: 588px;
                     align-items: center;
                 }
                 .banner-left-content {
-                    margin-top: 150px;
+                    position: absolute;
+                    width: auto;
+                    margin-top: 21px;
+                }
+                .banner-left-content > img {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 70%;
                 }
                 .banner-right-content {
-                    left: 70px;
-                    top: -70px;
-                }
-                .banner-right-content h2 {
+                    position: absolute;
+                    width: auto;
+                    right: 0;
+                    top: 155px;
+                    text-align: right;
+                    color: #fff;
                     text-transform: uppercase;
-                    font-weight: bold;
-                    color: #25a19c;
+                }
+                .banner-right-content > h2 {
+                    font-size: 1.7em;
+                }
+                .banner-right-content > .section-text {
+                    font-size: 1.2em;
+                    display: inline-block;
+                    padding: 1.5em 0;
                 }
                 .play-button {
-                    position: relative;
-                    top: 20px;
-                    left: -20px;
+                    position: absolute;
+                    top: 160px;
+                    right: 243px;
                     cursor: pointer;
                 }
                 .outer-card {
@@ -152,6 +171,7 @@ export default function Index() {
                     font-size: 1.2em;
                 }
                 .play-card-outer {
+                    background: #fff;
                     width: 160px;
                     height: 70px;
                 }
@@ -176,6 +196,7 @@ export default function Index() {
                     padding: 60px;
                 }
                 .atividades-content > img {
+                    max-width: 156px;
                     margin-bottom: 25px;
                 }
                 .atividades-content > p {
