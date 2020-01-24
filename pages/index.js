@@ -21,14 +21,15 @@ export default function Index() {
 
                                 <div className="play-button">
                                     <div>
-                                        <div className="outer-card rounded-circle shadow-sm">
-                                            <div className="inner-card">
-                                                <Link href="https://app.eja.luzdosaber.virtual.ufc.br/" passHref>
-                                                    <a target="_blank"><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
-                                                </Link>
-                                            </div>
-                                        </div>
-
+                                        <Link href="https://app.eja.luzdosaber.virtual.ufc.br/" passHref>
+                                            <a target="_blank">
+                                                <div className="outer-card rounded-circle shadow-sm">
+                                                    <div className="inner-card">
+                                                        <img src="static/btn_iniciar.svg" alt="" width="30px;" />
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </Link>
                                         <div className="search-bar-itens shadow-lg play-card play-card-outer">
                                             <button className="btn search-input form-input-font btn-font-orange play-card">Iniciar</button>
                                         </div>

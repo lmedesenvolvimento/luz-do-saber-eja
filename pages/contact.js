@@ -75,7 +75,8 @@ export default function Contact() {
                 }
 
                 .banner {
-                    background: url('static/BG_bannerCenario.png');
+                    background: url('static/BG_bannerCenario.png') no-repeat;
+                    background-size: cover;
                 }
 
                 .form-control {

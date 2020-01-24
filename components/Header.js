@@ -23,12 +23,12 @@ const Header = () => (
             </div>
             <div className="row">
                 <ul className="col-sm menu">
-                        <Link href='/' passHref>
-                            <li className="inicio selected">Início</li>
-                        </Link>
-                        {/* <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-home-page/' passHref>
+                        {/* <Link href='/' passHref>
                             <li className="inicio selected">Início</li>
                         </Link> */}
+                        <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-eja' passHref>
+                            <li className="inicio selected">Início</li>
+                        </Link>
                         <Link href="/contact" passHref>
                             <li className="software">software</li>
                         </Link>
@@ -44,10 +44,10 @@ const Header = () => (
                         <Link href="/contact" passHref>
                             <li className="creditos">Créditos</li>
                         </Link>
-                        <Link href='/contact' passHref>
+                        {/* <Link href='/contact' passHref>
                             <li className="contato">Contato</li>
-                        </Link>
-                        <Link href='https://lmedesenvolvimento.github.io/eja-luz-do-saber/contact' passHref>
+                        </Link> */}
+                        <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-eja/contact' passHref>
                             <li className="contato">Contato</li>
                         </Link>
                 </ul>
