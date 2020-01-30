@@ -63,6 +63,9 @@ const Header = () => (
 
         <style jsx>{`
             @media (min-width: 1200px) {
+                .hamburguer-container {
+                    display: none;
+                }
                 .main-nav {
                     justify-content: space-around;
                     text-transform: uppercase;
@@ -124,9 +127,9 @@ const Header = () => (
                 .logo-rosto {
                     padding: 20px 0;
                 }
-
-                input, button {
-                    margin-left: 25px;
+                button, input {
+                    top: 6px;
+                    left: 7px;
                 }
             }
 
