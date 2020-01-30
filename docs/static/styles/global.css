@@ -54,7 +54,6 @@ a {
 
 .search-input {
     position: absolute;
-    left: -18px;
     top: 5px;
     width: 235px;
     padding: 4px 10px 4px 10px;
@@ -86,7 +85,11 @@ a {
 }
 
 .btn {
+    position: absolute;
+    top: 3px;
+    left: 5px;
     border: 2px solid #5A9F9B;
+    border-radius: 20px;
     width: 90px;
 }
 
@@ -106,6 +109,10 @@ a {
     border: 3px solid #dedede;
 }
 
+.search-input-container-large {
+    width: 349px;
+}
+
 /* 
     BASE BANNER
 */
@@ -122,4 +129,158 @@ a {
 
 .banner-left-content {
     margin-top: 150px;
+}
+
+.atividades {
+    position: relative;
+    font-family: 'Itim', cursive;
+    padding-top: 588px;
+}
+
+.atividades-content {
+    text-align: center;
+    padding: 60px;
+}
+.atividades-content > img {
+    max-width: 156px;
+    margin-bottom: 25px;
+}
+.atividades-content > p {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #555555;
+}
+
+.section-head {
+    text-align: center;
+    padding-top: 50px;
+}
+.form {
+    justify-content: center;
+    padding: 50px;
+}
+
+
+@media (min-width: 320px) and (max-width: 1199px) {
+    /* 
+    ** BASE BANNER
+    */
+    .banner {
+        font-family: 'Itim', cursive;
+        height: 388px;
+    }
+    
+    .banner-content {
+        height: 388px;
+        align-items: center;
+    }
+    
+    .banner-left-content {
+        /* margin-top: 150px; */
+        display: none;
+    }
+
+    .banner-right-content {
+        position: absolute;
+        /* width: auto; */
+        right: 0;
+        top: 55px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .banner-right-content > h2 {
+        font-size: 1.5em;
+    }
+    .banner-right-content > .section-text {
+        font-size: 1em;
+        display: inline-block;
+        padding: 1.2em 0;
+    }
+    .play-button {
+        position: absolute;
+        top: 190px;
+        left: calc(50% - 110px);
+        cursor: pointer;
+    }
+    /* 
+    ** FIM BANNER
+    */
+
+    /* 
+    ** ATIVIDADES
+    */
+    .atividades {
+        position: relative;
+        font-family: 'Itim', cursive;
+        padding-top: 388px;
+    }
+    .atividades-content {
+        padding: 40px;
+    }
+    .atividades-content > .section-text {
+        display: none;
+    }
+    /* 
+    ** FIM ATIVIDADES
+    */
+
+    /* 
+    ** NEWS
+    */
+    .section-head {
+        padding-top: 20px;
+    }
+    .newsletter-call {
+        display: none;
+    }
+    .search-input-container,
+    .search-input-container-large {
+        width: 226px;
+        margin-left: 0;
+    }
+    .search-input {
+        width: 212px;
+    }
+    .btn-container > .btn {
+        width: 90px;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 16px;
+    }
+    .form > .search-bar-itens {
+        margin: 8px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* 
+    ** BASE BANNER
+    */
+    .banner-right-content {
+        position: absolute;
+        width: auto;
+        right: 0;
+        top: 155px;
+        text-align: right;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .banner-right-content > h2 {
+        font-size: 1.7em;
+    }
+    .banner-right-content > .section-text {
+        font-size: 1.2em;
+        display: inline-block;
+        padding: 1.5em 0;
+    }
+    .play-button {
+        position: absolute;
+        top: 160px;
+        right: 243px;
+        cursor: pointer;
+    }
 }

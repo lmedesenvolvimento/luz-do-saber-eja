@@ -21,7 +21,7 @@ export default function Index() {
 
                                 <div className="play-button">
                                     <div>
-                                        <Link href="https://app.eja.luzdosaber.virtual.ufc.br/" passHref>
+                                        <Link href="http://app.eja.luzdosaber.virtual.ufc.br/" passHref>
                                             <a target="_blank">
                                                 <div className="outer-card rounded-circle shadow-sm">
                                                     <div className="inner-card">
@@ -79,7 +79,7 @@ export default function Index() {
                                 <input className="search-input search-input-large form-input-font" type="text" name="search" id="search" placeholder="ESCREVA SEU E-MAIL" />
                             </div>
                             <div className="search-bar-itens btn-container shadow-sm">
-                                <button className="btn search-input btn-font-dark form-input-font">Enviar</button>
+                                <button className="btn btn-font-dark form-input-font">Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export default function Index() {
                     height: 100%;
                     max-width: 70%;
                 }
-                .banner-right-content {
+                {/* .banner-right-content {
                     position: absolute;
                     width: auto;
                     right: 0;
@@ -138,7 +138,7 @@ export default function Index() {
                     top: 160px;
                     right: 243px;
                     cursor: pointer;
-                }
+                } */}
                 .outer-card {
                     display: flex;
                     justify-content: center;
@@ -176,15 +176,6 @@ export default function Index() {
                     width: 160px;
                     height: 70px;
                 }
-                .atividades {
-                    position: relative;
-                    font-family: 'Itim', cursive;
-                    padding-top: 588px;
-                }
-                .section-head {
-                    text-align: center;
-                    padding-top: 50px;
-                }
                 .white-header {
                     color: #fff;
                 }
@@ -192,33 +183,13 @@ export default function Index() {
                     font-size: 1.5em;
                     color: #ffeac1;
                 }
-                .atividades-content {
-                    text-align: center;
-                    padding: 60px;
-                }
-                .atividades-content > img {
-                    max-width: 156px;
-                    margin-bottom: 25px;
-                }
-                .atividades-content > p {
-                    font-size: 1.6em;
-                    font-weight: bold;
-                    color: #555555;
-                }
                 .news {
                     font-family: 'Itim', cursive;
                     background: url('static/bg-news.png');
                     height: 280px;
                 }
-                .form {
-                    justify-content: center;
-                    padding: 50px;
-                }
                 .search-input-container {
                     margin-left: 20px;
-                }
-                .search-input-container-large {
-                    width: 349px;
                 }
                 .search-input {
                     left: 6px;

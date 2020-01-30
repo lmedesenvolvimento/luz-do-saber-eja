@@ -10,6 +10,15 @@ const Header = () => (
         </div>
         </div>
         <div className="col-sm-8 nav-search">
+            <div className="hamburguer-container">
+                <input id="menu-hamburguer" type="checkbox" />
+
+                <label htmlFor="menu-hamburguer">
+                    <div className="menu-hamburguer">
+                        <span className="hamburguer"></span>
+                    </div>
+                </label>
+            </div>
             <div className="row search-bar">
                 <div className="search-bar-itens search-input-container shadow-sm">
                     <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="O QUE VOCÊ PROCURA?" />
@@ -21,16 +30,13 @@ const Header = () => (
                     <button className="btn search-input btn-font-dark form-input-font">Instalar</button>
                 </div>
             </div>
-            <div className="row">
+            <div className="row menu-container">
                 <ul className="col-sm menu">
                         <li className="inicio selected">
                             <Link href='/' passHref>
-                                <a>Contato</a>
+                                <a>Início</a>
                             </Link>
                         </li>
-                        {/* <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-eja' passHref>
-                            <li className="inicio selected">Início</li>
-                        </Link> */}
                         <Link href="/contact" passHref>
                             <li className="software">software</li>
                         </Link>
@@ -51,78 +57,229 @@ const Header = () => (
                                 <a>Contato</a>
                             </Link>
                         </li>
-                        {/* <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-eja/contact' passHref>
-                            <li className="contato">Contato</li>
-                        </Link> */}
                 </ul>
             </div>
         </div>
 
         <style jsx>{`
-            .main-nav {
-                justify-content: space-around;
-                text-transform: uppercase;
-            }
-            .hidden-title {
-                visibility: hidden;
-                position: absolute;
-            }
-            .nav-search {
-                font-family: 'Itim', cursive;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .search-bar {
-                position: absolute;
-                right: 70px;
-                top: 30px;
+            @media (min-width: 1200px) {
+                .main-nav {
+                    justify-content: space-around;
+                    text-transform: uppercase;
+                }
+                .hidden-title {
+                    visibility: hidden;
+                    position: absolute;
+                }
+                .nav-search {
+                    font-family: 'Itim', cursive;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .search-bar {
+                    position: absolute;
+                    right: 70px;
+                    top: 30px;
+                }
+
+                .menu {
+                    position: absolute;
+                    bottom: -17px;
+                }
+
+                .menu li {
+                    display: inline-block;
+                    padding: 10px;
+                    width: 100px;
+                    font-size: 0.8em;
+                    text-align: center;
+                    border: 1px solid #F0F0F0;
+                    margin-left: 1px;
+                }
+
+                .menu li:hover { cursor: pointer; }
+
+                .menu li a { color:#333; text-decoration:none; display:block; }
+
+                .menu .inicio { border: 1px solid transparent; border-top: 3px solid #FFB151; }
+                .menu .inicio:hover { background: #FFB151; color: #fff; }
+                .menu .software { border: 1px solid transparent; border-top: 3px solid #F766AE; }
+                .menu .software:hover { background: #F766AE; color: #fff; }
+                .menu .download { border: 1px solid transparent; border-top: 3px solid #AE67E0; }
+                .menu .download:hover { background: #AE67E0; color: #fff; }
+                .menu .tutorial { border: 1px solid transparent; border-top: 3px solid #757BFA; }
+                .menu .tutorial:hover { background: #757BFA; color: #fff; }
+                .menu .forum { border: 1px solid transparent; border-top: 3px solid #75C0FF; }
+                .menu .forum:hover { background: #75C0FF; color: #fff; }
+                .menu .creditos { border: 1px solid transparent; border-top: 3px solid #50C0AA; }
+                .menu .creditos:hover { background: #50C0AA; color: #fff; }
+                .menu .contato { border: 1px solid transparent; border-top: 3px solid #50946D; }
+                .menu .contato:hover { background: #50946D; color: #fff; }
+
+                .selected {
+                    background: #FFB151;
+                }
+
+                .logo-rosto {
+                    padding: 20px 0;
+                }
+
+                input, button {
+                    margin-left: 25px;
+                }
             }
 
-            .menu {
-                position: absolute;
-                bottom: -17px;
-            }
+            @media (min-width: 320px) and (max-width: 1199px) {
+                /*
+                *
+                *   MENU HAMBURGUER
+                *
+                */
+                {/* .hamburguer-container {
+                    position: fixed;
+                    width: 46px;
+                    height: 46px;
+                    right: 10px;
+                    top: 40px;
+                } */}
+                .hamburguer-container > input {
+                    display: none;
+                }
+                .menu-hamburguer {
+                    position: fixed;
+                    top: 40px;
+                    background: #fff;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 60px;
+                    right: 0;
+                }
+                .hamburguer {
+                    position: absolute;
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    top: 28px;
+                    right: 15px;
+                    background: #000;
 
-            .menu li {
-                display: inline-block;
-                padding: 10px;
-                width: 100px;
-                font-size: 0.8em;
-                text-align: center;
-                border: 1px solid #F0F0F0;
-                margin-left: 1px;
-            }
+                    transition: .5s ease-in-out;
+                }
+                .hamburguer:before,
+                .hamburguer:after {
+                    background: #000;
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    position: absolute;
 
-            .menu li:hover { cursor: pointer; }
+                    transition: .5s ease-in-out;
+                }
+                .hamburguer:before {
+                    top: -10px;
+                }
 
-            .menu li a { color:#333; text-decoration:none; display:block; }
+                .hamburguer:after {
+                    bottom: -10px;
+                }
 
-            .menu .inicio { border: 1px solid transparent; border-top: 3px solid #FFB151; }
-            .menu .inicio:hover { background: #FFB151; color: #fff; }
-            .menu .software { border: 1px solid transparent; border-top: 3px solid #F766AE; }
-            .menu .software:hover { background: #F766AE; color: #fff; }
-            .menu .download { border: 1px solid transparent; border-top: 3px solid #AE67E0; }
-            .menu .download:hover { background: #AE67E0; color: #fff; }
-            .menu .tutorial { border: 1px solid transparent; border-top: 3px solid #757BFA; }
-            .menu .tutorial:hover { background: #757BFA; color: #fff; }
-            .menu .forum { border: 1px solid transparent; border-top: 3px solid #75C0FF; }
-            .menu .forum:hover { background: #75C0FF; color: #fff; }
-            .menu .creditos { border: 1px solid transparent; border-top: 3px solid #50C0AA; }
-            .menu .creditos:hover { background: #50C0AA; color: #fff; }
-            .menu .contato { border: 1px solid transparent; border-top: 3px solid #50946D; }
-            .menu .contato:hover { background: #50946D; color: #fff; }
+                input:checked ~ label .hamburguer {
+                    transform: rotate(45deg);
+                }
 
-            .selected {
-                background: #FFB151;
-            }
+                input:checked ~ label .hamburguer:before {
+                    transform: rotate(90deg);
+                    top: 0;
+                }
 
-            .logo-rosto {
-                padding: 20px 0;
-            }
+                input:checked ~ label .hamburguer:after {
+                    transform: rotate(90deg);
+                    bottom: 0;
+                }
+                /*
+                *
+                *   MENU HAMBURGUER
+                *
+                */
 
-            input, button {
-                margin-left: 25px;
+                .main-nav {
+                    justify-content: space-around;
+                    text-transform: uppercase;
+                }
+                .hidden-title {
+                    visibility: hidden;
+                    position: absolute;
+                }
+                .nav-search {
+                    font-family: 'Itim', cursive;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    z-index: 10;
+                }
+                .search-bar {
+                    position: absolute;
+                    right: 70px;
+                    top: 30px;
+                }
+                .search-bar-itens:first-child { /* BARRA DE PESQUISA */
+                    display: none;
+                }
+                .menu-container {
+                    display: none;
+                    position: fixed;
+                    background: #000;
+                    top: 0px;
+                    right: -10vw;
+                    width: 100vw;
+                    height: 50vh;
+                }
+                .menu {
+                    position: absolute;
+                }
+                .menu li {
+                    display: block;
+                    padding: 10px;
+                    width: 100px;
+                    background: #fff;
+                    font-size: 0.8em;
+                    text-align: center;
+                    border: 1px solid #F0F0F0;
+                    margin-left: 1px;
+                }
+
+                .menu li:hover { cursor: pointer; }
+
+                .menu li a { color:#333; text-decoration:none; display:block; }
+
+                .menu .inicio { border: 1px solid transparent; border-top: 3px solid #FFB151; }
+                .menu .inicio:hover { background: #FFB151; color: #fff; }
+                .menu .software { border: 1px solid transparent; border-top: 3px solid #F766AE; }
+                .menu .software:hover { background: #F766AE; color: #fff; }
+                .menu .download { border: 1px solid transparent; border-top: 3px solid #AE67E0; }
+                .menu .download:hover { background: #AE67E0; color: #fff; }
+                .menu .tutorial { border: 1px solid transparent; border-top: 3px solid #757BFA; }
+                .menu .tutorial:hover { background: #757BFA; color: #fff; }
+                .menu .forum { border: 1px solid transparent; border-top: 3px solid #75C0FF; }
+                .menu .forum:hover { background: #75C0FF; color: #fff; }
+                .menu .creditos { border: 1px solid transparent; border-top: 3px solid #50C0AA; }
+                .menu .creditos:hover { background: #50C0AA; color: #fff; }
+                .menu .contato { border: 1px solid transparent; border-top: 3px solid #50946D; }
+                .menu .contato:hover { background: #50946D; color: #fff; }
+
+                .selected {
+                    background: #FFB151;
+                }
+
+                .logo-rosto {
+                    padding: 20px 0;
+                }
+                button, input {
+                    top: 6px;
+                    left: 7px;
+                }
             }
         `}</style>
     </nav>
