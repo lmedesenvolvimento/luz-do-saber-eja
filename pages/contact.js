@@ -13,11 +13,11 @@ export default function Contact() {
                     <div className="container">
                         <div className="row banner-content">
                             <div className="col banner-left-content">
-                                <img src="/static/ilustracao_contato.png" alt="Desenho de crianças estudando"height="411px" />
+                                <img src="/static/pessoas.png" alt="Desenho de crianças estudando" />
                             </div>
 
                             <div className="col banner-right-content">
-                                <div>
+                                <div className="form-head">
                                     <h2>Entre em Contato Conosco!</h2>
                                     <span className="title"><strong>SEDUC (ASTIN):</strong> (85) 3101-3963</span>
                                 </div>
@@ -25,20 +25,20 @@ export default function Contact() {
                                 <form className="form">
                                     <div className="input-group">
                                         <div className="search-bar-itens search-input-container shadow-sm">
-                                            <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="NOME" />
+                                            <input className="search-input form-input-font" type="text" name="search" placeholder="NOME" />
                                         </div>
 
                                         <div className="search-bar-itens search-input-container shadow-sm">
-                                            <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="TELEFONE" />
+                                            <input className="search-input form-input-font" type="text" name="search" placeholder="TELEFONE" />
                                         </div>
                                     </div>
 
                                     <div className="search-bar-itens search-input-container search-input-container-xlarge  shadow-sm">
-                                        <input className="search-input search-input-xlarge form-input-font" type="text" name="search" id="search" placeholder="EMAIL" />
+                                        <input className="search-input search-input-xlarge form-input-font" type="text" name="search" placeholder="EMAIL" />
                                     </div>
 
                                     <div className="search-bar-itens outer-card shadow-sm">
-                                        <textarea className="inner-card" name="mensagem" id="mensagem" cols="50" rows="4" placeholder="ESCREVA SUA MENSAGEM"></textarea>
+                                        <textarea className="inner-card" name="mensagem" id="mensagem" cols="56" rows="4" placeholder="ESCREVA SUA MENSAGEM"></textarea>
                                     </div>
                                     
                                     <div className="search-bar-itens btn-container shadow-sm">
@@ -61,7 +61,7 @@ export default function Contact() {
                     display: flex;
                     align-items: center;
                     position: absolute;
-                    background: #50946D;
+                    background: #FFB151;
                     border-radius: 0;
                     width: 100%;
                     height: 50px;
@@ -75,52 +75,68 @@ export default function Contact() {
                 }
 
                 .banner {
-                    background: url('static/BG_bannerCenario.png') no-repeat;
+                    background: 
+                        url('static/banner-transparency.png'),
+                        url('static/banner-blue.png');
                     background-size: cover;
                 }
 
-                .form-control {
-                    outline: 1px solid orange;
-                }
-                .shadow-textarea textarea.form-control::placeholder {
-                    font-weight: 300;
-                }
-                .shadow-textarea textarea.form-control {
-                    padding-left: 0.8rem;
+                .banner-left-content {
+                    margin-top: 7.5em;
                 }
 
-                .outer-card {
-                    display: flex;
-                    justify-content: center;
-                    align-itens: center;
-                    width: fit-content;
-                    padding: 5px;
-                    margin: 10px 0 20px 0;
-                    border-radius: 30px;
-                    background: #fff;
-                }
-
-                .inner-card {
-                    border: 1px solid #DEDEDE;
-                    border-radius: 30px;
-                    padding: 10px 15px 10px 15px;;
-                    outline: none;
+                .banner-left-content > img {
+                    width: 60%;
+                    height: 60%;
+                    max-width: 60%;
                 }
 
                 .banner-right-content {
-                    display: flex;
-                    flex-direction: column;
-                    top: 0;
+                    position: absolute;
+                    width: auto;
+                    right: 390px;
+                    top: 100px;
+                    text-align: left;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .banner-right-content > h2 {
+                    font-size: 1.7em;
                 }
 
-                .banner-right-content h2 {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: #25a19c;
+                .form-head {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+                .shadow-textarea textarea::placeholder {
+                    font-weight: 300;
+                }
+                .outer-card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 5px;
+                    margin: 15px 0 20px 0;
+                    border-radius: 20px;
+                    background: #fff;
+                    width: 505px;
+                }
+                .inner-card {
+                    border: 1px solid #DEDEDE;
+                    border-radius: 20px;
+                    padding: 10px 15px 10px 15px;
+                    outline: none;
+                }
+                .btn-container {
+                    top: 160px;
+                    left: 386px;
                 }
 
                 .search-input {
                     left: 7px;
+                    top: 5px;
                 }
 
                 .search-input-large {

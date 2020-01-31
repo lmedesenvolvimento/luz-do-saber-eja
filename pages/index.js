@@ -73,10 +73,10 @@ export default function Index() {
 
                         <div className="row form">
                             <div className="search-bar-itens search-input-container shadow-sm">
-                                <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="ESCREVA SEU NOME" />
+                                <input className="search-input form-input-font" type="text" name="search" placeholder="ESCREVA SEU NOME" />
                             </div>
                             <div className="search-bar-itens search-input-container search-input-container-large shadow-sm">
-                                <input className="search-input search-input-large form-input-font" type="text" name="search" id="search" placeholder="ESCREVA SEU E-MAIL" />
+                                <input className="search-input search-input-large form-input-font" type="text" name="search" placeholder="ESCREVA SEU E-MAIL" />
                             </div>
                             <div className="search-bar-itens btn-container shadow-sm">
                                 <button className="btn btn-font-dark form-input-font">Enviar</button>

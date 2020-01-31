@@ -13,7 +13,7 @@ a {
 }
 
 .title {
-    color: #555555;
+    color: #fff;
 }
 
 .subtitle {
@@ -157,7 +157,7 @@ a {
 }
 .form {
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
 }
 .play-button {
     position: absolute;

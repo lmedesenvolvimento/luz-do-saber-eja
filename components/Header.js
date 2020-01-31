@@ -6,7 +6,6 @@ const Header = () => (
         <div className="row logo">
             <h1 className="hidden-title">LUZ DO SABER - PORTAL</h1>
             <img className="logo-rosto" src="static/logo_eja.png" alt="Logo Sol Luz do Saber" width="55%" />
-            {/* <img src="static/logo-raios.png" alt="Logo Sol Luz do Saber" width="55%" /> */}
         </div>
         </div>
         <div className="col-sm-8 nav-search">
@@ -19,7 +18,7 @@ const Header = () => (
                     </div>
                 </label>
             </div>
-            <div className="row search-bar">
+            {/* <div className="row search-bar">
                 <div className="search-bar-itens search-input-container shadow-sm">
                     <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="O QUE VOCÊ PROCURA?" />
                 </div>
@@ -29,7 +28,7 @@ const Header = () => (
                 <div className="search-bar-itens btn-container shadow-sm">
                     <button className="btn search-input btn-font-dark form-input-font">Instalar</button>
                 </div>
-            </div>
+            </div> */}
             <div className="row menu-container">
                 <ul className="col-sm menu">
                         <li className="inicio selected">
@@ -37,7 +36,7 @@ const Header = () => (
                                 <a>Início</a>
                             </Link>
                         </li>
-                        <Link href="/contact" passHref>
+                        {/* <Link href="/contact" passHref>
                             <li className="software">software</li>
                         </Link>
                         <Link href="/contact" passHref>
@@ -51,7 +50,7 @@ const Header = () => (
                         </Link>
                         <Link href="/contact" passHref>
                             <li className="creditos">Créditos</li>
-                        </Link>
+                        </Link> */}
                         <li className="contato">
                             <Link href='/contact' passHref>
                                 <a>Contato</a>
@@ -105,20 +104,20 @@ const Header = () => (
 
                 .menu li a { color:#333; text-decoration:none; display:block; }
 
-                .menu .inicio { border: 1px solid transparent; border-top: 3px solid #FFB151; }
+                .menu .inicio { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
                 .menu .inicio:hover { background: #FFB151; color: #fff; }
-                .menu .software { border: 1px solid transparent; border-top: 3px solid #F766AE; }
-                .menu .software:hover { background: #F766AE; color: #fff; }
-                .menu .download { border: 1px solid transparent; border-top: 3px solid #AE67E0; }
-                .menu .download:hover { background: #AE67E0; color: #fff; }
-                .menu .tutorial { border: 1px solid transparent; border-top: 3px solid #757BFA; }
-                .menu .tutorial:hover { background: #757BFA; color: #fff; }
-                .menu .forum { border: 1px solid transparent; border-top: 3px solid #75C0FF; }
-                .menu .forum:hover { background: #75C0FF; color: #fff; }
-                .menu .creditos { border: 1px solid transparent; border-top: 3px solid #50C0AA; }
-                .menu .creditos:hover { background: #50C0AA; color: #fff; }
-                .menu .contato { border: 1px solid transparent; border-top: 3px solid #50946D; }
-                .menu .contato:hover { background: #50946D; color: #fff; }
+                .menu .software { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
+                .menu .software:hover { background: #FFB151; color: #fff; }
+                .menu .download { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
+                .menu .download:hover { background: #FFB151; color: #fff; }
+                .menu .tutorial { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
+                .menu .tutorial:hover { background: #FFB151; color: #fff; }
+                .menu .forum { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
+                .menu .forum:hover { background: #FFB151; color: #fff; }
+                .menu .creditos { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
+                .menu .creditos:hover { background: #FFB151; color: #fff; }
+                .menu .contato { border: 1px solid transparent; border-top: 4px solid rgba(24, 65, 109, 0.15); }
+                .menu .contato:hover { background: #FFB151; color: #fff; }
 
                 .selected {
                     background: #FFB151;
