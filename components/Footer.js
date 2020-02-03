@@ -11,22 +11,22 @@ const Footer = () => (
         
         <div className="row display-content">
             <div>
-                <img src="static/lme.png" alt="" />
+                <img className="logo" src="static/lme.png" alt="" />
             </div>
             <div>
-                <img src="static/ufc-virtual.png" alt="" />
+                <img className="logo" src="static/ufc-virtual.png" alt="" />
             </div>
             <div>
-                <img src="static/ufc.png" alt="" />
+                <img className="logo" src="static/ufc.png" alt="" />
             </div>
             <div>
-                <img src="static/governo.png" alt="" />
+                <img className="logo" src="static/governo.png" alt="" />
             </div>
             <div>
-                <img src="static/funcap.png" alt="" />
+                <img className="logo" src="static/prefeitura.png" alt="" />
             </div>
             <div>
-                <img src="static/prefeitura.png" alt="" />
+                <img className="logo funcap" src="static/funcap.png" alt="" />
             </div>
         </div>
 
@@ -42,12 +42,12 @@ const Footer = () => (
             .display-content {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 padding-bottom: 20px;
             }
             .display-content > div {
-                margin: 15px 30px;
-                width: 120px;
-                height: auto;
+                margin-left: 30px;
+                margin-right: 30px;
             }
             div > img {
                 max-width: 100%;
@@ -68,6 +68,15 @@ const Footer = () => (
                 text-transform: uppercase;
                 display: inline-block;
                 margin: 30px;
+            }
+
+            .logo {
+                width: 160px;
+                height: 50px;
+            }
+
+            .funcap {
+                width: 120px;
             }
         `}</style>
     </footer>
