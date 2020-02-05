@@ -36,21 +36,21 @@ const Header = () => (
                                 <a>Início</a>
                             </Link>
                         </li>
-                        {/* <Link href="/contact" passHref>
-                            <li className="software">software</li>
+                        <Link href="/contact" passHref>
+                            <li className="software disabled">software</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="download">Download</li>
+                            <li className="download disabled">Download</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="tutorial">Tutorial</li>
+                            <li className="tutorial disabled">Tutorial</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="forum">Fórum</li>
+                            <li className="forum disabled">Fórum</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="creditos">Créditos</li>
-                        </Link> */}
+                            <li className="creditos disabled">Créditos</li>
+                        </Link>
                         <li className="contato">
                             <Link href='/contact' passHref>
                                 <a>Contato</a>
@@ -121,6 +121,11 @@ const Header = () => (
 
                 .selected {
                     background: #FFB151;
+                }
+
+                .disabled {
+                    background: #d3d3d3; color: #fff;
+                    border-top: 3px solid #d3d3d3;
                 }
 
                 .logo-rosto {
