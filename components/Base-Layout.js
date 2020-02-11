@@ -14,7 +14,7 @@ const BaseLayout = (props) => (
             <link rel="stylesheet" href="static/styles/global.css"/>
         </Head>
 
-        <Header />
+        {/* <Header /> */}
 
         <main>
             {props.children}
