@@ -17,16 +17,6 @@ class Header extends React.Component {
             console.log(element.classList);
         }
     }
-
-    menuExpander() {
-        let menu = ReactDOM.findDOMNode(this).getElementsByClassName('menu-container');
-        
-        if (menu[0].classList.contains('expanded')) {
-            menu[0].classList.remove('expanded');
-        } else {
-            menu[0].classList.add('expanded');
-        }
-    }
     
     render() {
         return (
@@ -38,15 +28,6 @@ class Header extends React.Component {
                 </div>
                 </div>
                 <div className="col-sm-8 nav-search">
-                    <div className="hamburguer-container">
-                        <input id="menu-hamburguer" type="checkbox" />
-
-                        <label htmlFor="menu-hamburguer">
-                            <div className="menu-hamburguer" onClick={() => this.menuExpander()}>
-                                <span className="hamburguer"></span>
-                            </div>
-                        </label>
-                    </div>
                     <div className="row search-bar">
                         <div className="search-bar-itens search-input-container shadow-sm">
                             <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="O QUE VOCÊ PROCURA?" />
@@ -58,40 +39,50 @@ class Header extends React.Component {
                             <button className="btn search-input btn-font-dark form-input-font">Instalar</button>
                         </div>
                     </div>
-                    <div className="row menu-container">
-                        <ul className="col-sm menu">
-                                <li className={"inicio " + (this.props.selected === "inicio" ? "selected" : "")}>
-                                    <Link href='/' passHref>
-                                        <a>Início</a>
+                    <div className="hamburguer-container">
+                        <input id="menu-hamburguer" type="checkbox" />
+
+                        <label htmlFor="menu-hamburguer">
+                            <div className="menu-hamburguer">
+                                <span className="hamburguer"></span>
+                            </div>
+                        </label>
+                        <div className="row menu-container">
+                            <ul className="col-sm menu">
+                                    <li className={"inicio " + (this.props.selected === "inicio" ? "selected" : "")}>
+                                        <Link href='/' passHref>
+                                            <a>Início</a>
+                                        </Link>
+                                    </li>
+                                    <Link href="/contact" passHref>
+                                        <li className="software disabled">software</li>
                                     </Link>
-                                </li>
-                                <Link href="/contact" passHref>
-                                    <li className="software disabled">software</li>
-                                </Link>
-                                <Link href="/contact" passHref>
-                                    <li className="download disabled">Download</li>
-                                </Link>
-                                <Link href="/contact" passHref>
-                                    <li className="tutorial disabled">Tutorial</li>
-                                </Link>
-                                <Link href="/contact" passHref>
-                                    <li className="forum disabled">Fórum</li>
-                                </Link>
-                                <Link href="/contact" passHref>
-                                    <li className="creditos disabled">Créditos</li>
-                                </Link>
-                                <li className={"contato " + (this.props.selected === "contact" ? "selected" : "")}>
-                                    <Link href='/contact' passHref>
-                                        <a>Contato</a>
+                                    <Link href="/contact" passHref>
+                                        <li className="download disabled">Download</li>
                                     </Link>
-                                </li>
-                        </ul>
+                                    <Link href="/contact" passHref>
+                                        <li className="tutorial disabled">Tutorial</li>
+                                    </Link>
+                                    <Link href="/contact" passHref>
+                                        <li className="forum disabled">Fórum</li>
+                                    </Link>
+                                    <Link href="/contact" passHref>
+                                        <li className="creditos disabled">Créditos</li>
+                                    </Link>
+                                    <li className={"contato " + (this.props.selected === "contact" ? "selected" : "")}>
+                                        <Link href='/contact' passHref>
+                                            <a>Contato</a>
+                                        </Link>
+                                    </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <style jsx>{`
                     @media (min-width: 1200px) {
-                        .hamburguer-container {
+                        .hamburguer-container > input,
+                        .hamburguer-container > label {
                             display: none;
                         }
                         .main-nav {
@@ -174,13 +165,6 @@ class Header extends React.Component {
                         *   MENU HAMBURGUER
                         *
                         */
-                        {/* .hamburguer-container {
-                            position: fixed;
-                            width: 46px;
-                            height: 46px;
-                            right: 10px;
-                            top: 40px;
-                        } */}
                         .hamburguer-container > input {
                             display: none;
                         }
@@ -245,6 +229,10 @@ class Header extends React.Component {
                             transform: rotate(90deg);
                             bottom: 0;
                         }
+
+                        input:checked ~ .menu-container {
+                            transform: translateX(300px);
+                        }
                         /*
                         *
                         *   MENU HAMBURGUER
@@ -276,7 +264,6 @@ class Header extends React.Component {
                             display: none;
                         }
                         .menu-container {
-                            /* display: none; */
                             position: fixed;
                             background: rgb(92,183,204);
                             background: linear-gradient(90deg, rgba(92,183,204,0.9) 49%, rgba(48,142,163,0.9) 100%, rgba(9,9,121,0.9) 100%);
@@ -287,9 +274,9 @@ class Header extends React.Component {
 
                             transition: all 0.3s linear;
                         }
-                        .expanded {
+                        {/* .expanded {
                             transform: translateX(300px);
-                        }
+                        } */}
                         .menu {
                             position: absolute;
                             display: flex;
