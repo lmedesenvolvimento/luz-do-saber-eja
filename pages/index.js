@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Header from "../components/Header";
 import BaseLayout from '../components/Base-Layout';
 import Footer from "../components/Footer";
 
@@ -6,6 +7,8 @@ export default function Index() {
     return (
         <div>
             <BaseLayout>
+
+                <Header selected="inicio" />
 
                 <section className="banner full-width">
                     <div className="container">

@@ -1,3 +1,4 @@
+import Header from "../components/Header";
 import BaseLayout from "../components/Base-Layout";
 import Footer from '../components/Footer';
 
@@ -5,6 +6,9 @@ export default function Contact() {
     return (
         <div>
             <BaseLayout>
+
+                <Header selected="contact" />
+
                 <section className="banner full-width">
                     <div className="pagination">
                         <span className="pagination-item">principal</span> <span className="pagination-item">/</span> <span className="pagination-item">contato</span>
@@ -94,7 +98,7 @@ export default function Contact() {
                 .banner-right-content {
                     position: absolute;
                     width: auto;
-                    right: 390px;
+                    right: 115px;
                     top: 100px;
                     text-align: left;
                     color: #fff;
@@ -152,6 +156,43 @@ export default function Contact() {
                     font-family: 'Itim', cursive;
                     margin-top: 300px;
                     text-align: center;
+                }
+
+                @media (min-width: 320px) and (max-width: 1199px) {
+                    .full-width {
+                        height: 590px;
+                    }
+                    .banner-right-content {
+                        position: absolute;
+                        top: 100px;
+                        right: 0;
+                        text-align: left;
+                        color: #fff;
+                        text-transform: uppercase;
+                        left: 5%;
+                    }
+                    .form-head > h2 {
+                        font-size: 1.2em;
+                    }
+
+                    .search-input-container {
+                        margin-top: 7px;
+                    }
+
+                    .form > .search-bar-itens {
+                        margin: 7px 0;
+                    }
+
+                    .outer-card {
+                        width: 80%;
+                    }
+                    .inner-card {
+                        width: 100%;
+                    }
+
+                    .btn-container {
+                        left: 0;
+                    }
                 }
             `}</style>
         </div>

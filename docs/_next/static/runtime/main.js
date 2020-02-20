@@ -6344,7 +6344,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\Rodrigo Lira\\Documents\\projetos\\eja-luz-do-saber\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/home/ronin/Documentos/Projetos/eja-luzdosaber/.next");
       return error;
     }
   };

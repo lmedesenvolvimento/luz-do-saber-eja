@@ -76,6 +76,7 @@ const Footer = () => (
             .logo {
                 width: 160px;
                 height: 50px;
+                margin-bottom: 20px;
             }
 
             .funcap {

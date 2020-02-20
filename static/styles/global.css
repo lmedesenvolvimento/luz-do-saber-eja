@@ -109,10 +109,6 @@ a {
     border: 3px solid #dedede;
 }
 
-.search-input-container-large {
-    width: 349px;
-}
-
 /* 
     BASE BANNER
 */
@@ -211,9 +207,6 @@ a {
         color: #fff;
         text-transform: uppercase;
     }
-    .banner-right-content > h2 {
-        font-size: 1.5em;
-    }
     .banner-right-content > .section-text {
         font-size: 1em;
         display: inline-block;
@@ -223,7 +216,7 @@ a {
         position: absolute;
         width: 235px;
         height: 100px;
-        top: 190px;
+        top: 210px;
         left: calc(50% - 110px);
         cursor: pointer;
     }
