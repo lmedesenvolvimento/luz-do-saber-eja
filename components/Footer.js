@@ -8,32 +8,46 @@ const Footer = () => (
                 <li><a href=""><img src="static/icone_facebook.svg" alt="" /></a></li>
             </ul>
         </div>
-        
+
         <div className="row display-content">
+            <a href="http://lme.ufc.br/" target="_blank">
             <div>
                 <img className="logo" src="static/lme.png" alt="" />
             </div>
+          </a>
+          <a href="http://portal.virtual.ufc.br/" target="_blank">
             <div>
                 <img className="logo" src="static/ufc-virtual.png" alt="" />
             </div>
+          </a>
+          <a href="http://www.ufc.br/" target="_blank">
             <div>
                 <img className="logo" src="static/ufc.png" alt="" />
             </div>
+          </a>
+          <a href="https://www.funcap.ce.gov.br/programas-de-auxilio/programa-cientista-chefe/" target="_blank">
             <div>
                 <img className="logo" src="static/cientista-chefe-azul.png" alt="" />
             </div>
+          </a>
+          <a href="https://www.ceara.gov.br/" target="_blank">
             <div>
                 <img className="logo" src="static/governo.png" alt="" />
             </div>
+          </a>
+          <a href="https://www.fortaleza.ce.gov.br/" target="_blank">
             <div>
                 <img className="logo" src="static/prefeitura.png" alt="" />
             </div>
+          </a>
+          <a href="https://www.funcap.ce.gov.br/" target="_blank">
             <div>
                 <img className="logo funcap" src="static/funcap.png" alt="" />
             </div>
+          </a>
         </div>
 
-        <span className="copyright"><a href="">Termos de uso e política de privacidade</a> | &#169; 2019 Luz do Saber. Todos os direitos reservados.</span>
+        <span className="copyright"><a href="https://luzdosaber.seduc.ce.gov.br/politica/index.php" target="_blank">Termos de uso e política de privacidade</a> | &#169; 2019 Luz do Saber. Todos os direitos reservados.</span>
 
         <style jsx>{`
             .footer {
@@ -48,7 +62,7 @@ const Footer = () => (
                 align-items: center;
                 padding-bottom: 20px;
             }
-            .display-content > div {
+            .display-content a {
                 margin-left: 30px;
                 margin-right: 30px;
             }

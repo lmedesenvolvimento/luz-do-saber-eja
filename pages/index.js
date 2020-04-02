@@ -18,7 +18,7 @@ export default function Index() {
                             </div>
 
                             <div className="col banner-right-content">
-                                <h2>Atividades, jogos e exercícios <br /> de alfabetização e letramento</h2>
+                                <h2>Atividades, jogos e exercícios <br /> de alfabetização e letramento!</h2>
 
                                 <span className="section-text">Clique no botão abaixo para iniciar</span>
 
@@ -52,17 +52,17 @@ export default function Index() {
                         <div className="col atividades-content">
                             <img src="static/puzzle.png" alt="" />
                             <p>Jogos <br />Educativos</p>
-                            <span className="section-text">Divirta-se e aprenda com jogos como quebra-cabeça, bingo e diversos outros disponíveis!</span>
+                            <span className="section-text">Aprenda com jogos clássicos de alfabetização e letramento!</span>
                         </div>
                         <div className="col atividades-content">
                             <img src="static/book.png" alt="" />
-                            <p>Atividades <br />Divertidas</p>
-                            <span className="section-text">Resolva atividades desafiadoras, crie gibis e jornais e teste seus conhecimentos!</span>
+                            <p>Atividades  <br />de Alfabetização</p>
+                            <span className="section-text">Desafie-se nas atividades e na criação de Jornais, Cartões e muitos outros aplicativos de escrita!</span>
                         </div>
                         <div className="col atividades-content">
                             <img src="static/atividades.png" alt="" />
                             <p>Atividades Personalizadas</p>
-                            <span className="section-text">Jogue ou faça as atividades escritas e editadas pelo seu professor!</span>
+                            <span className="section-text">Crie e monte atividades para seus filhos e alunos!</span>
                         </div>
                     </div>
                 </section>
@@ -95,10 +95,10 @@ export default function Index() {
             <style jsx>{`
                 .banner {
                     font-family: 'Itim', cursive;
-                    background: 
+                    background:
                         url('static/banner-transparency.png'),
                         url('static/banner-blue.png');
-                    background-position: 
+                    background-position:
                         left top,
                         center top;
                     background-size: cover;

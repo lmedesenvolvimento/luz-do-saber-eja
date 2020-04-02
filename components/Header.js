@@ -46,19 +46,23 @@ class Header extends React.Component {
             </div>
             <form
               className="search-bar-itens btn-container shadow-sm"
-              action="https://luz-do-saber-staging.herokuapp.com/#/"
+              action="https://luz-do-saber-production.herokuapp.com/#/"
               target="_blank"
             >
               <button className="btn search-input btn-font-light form-input-font">
                 Editar
               </button>
             </form>
-            <div className="search-bar-itens btn-container shadow-sm">
+            {/*  apenas quando tiver o intalador
+           <div className="search-bar-itens btn-container shadow-sm">
               <button className="btn search-input btn-font-dark form-input-font">
                 Instalar
               </button>
             </div>
+            */}
           </div>
+
+
           <div className="hamburguer-container">
             <input id="menu-hamburguer" type="checkbox" />
 
@@ -88,9 +92,7 @@ class Header extends React.Component {
                 <Link href="/contact" passHref>
                   <li className="tutorial disabled">Tutorial</li>
                 </Link>
-                <Link href="/contact" passHref>
-                  <li className="forum disabled">Fórum</li>
-                </Link>
+
                 <Link href="/contact" passHref>
                   <li className="creditos disabled">Créditos</li>
                 </Link>
