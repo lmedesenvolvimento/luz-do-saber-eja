@@ -73,39 +73,43 @@ class Header extends React.Component {
             </label>
             <div className="row menu-container">
               <ul className="col-sm menu">
-                <li
-                  className={
-                    "inicio " +
-                    (this.props.selected === "inicio" ? "selected" : "")
-                  }
+                <HeaderItem
+                  href="/"
+                  selected={this.props.selected}
+                  to="inicio"
                 >
-                  <Link href="/" passHref>
-                    <a>Início</a>
-                  </Link>
-                </li>
-                <Link href="/contact" passHref>
-                  <li className="software disabled">software</li>
-                </Link>
-                <Link href="/contact" passHref>
-                  <li className="download disabled">Download</li>
-                </Link>
-                <Link href="/contact" passHref>
-                  <li className="tutorial disabled">Tutorial</li>
-                </Link>
-
-                <Link href="/contact" passHref>
-                  <li className="creditos disabled">Créditos</li>
-                </Link>
-                <li
-                  className={
-                    "contato " +
-                    (this.props.selected === "contact" ? "selected" : "")
-                  }
+                  Início
+                </HeaderItem>
+                <HeaderItem
+                  href="/projeto"
+                  selected={this.props.selected}
+                  to="projeto"
                 >
-                  <Link href="/contact" passHref>
-                    <a>Contato</a>
-                  </Link>
-                </li>
+                  Projeto
+                </HeaderItem>
+                <HeaderItem
+                  href="/download"
+                  selected={this.props.selected}
+                  to="download"
+                >
+                  Downloads
+                </HeaderItem>
+                <HeaderItem to="tutorial">
+                  Tutorial
+                </HeaderItem>
+                <HeaderItem to="forum">
+                  Fórum
+                </HeaderItem>
+                <HeaderItem to="creditos">
+                  Créditos
+                </HeaderItem>
+                <HeaderItem
+                  href="/contato"
+                  selected={this.props.selected}
+                  to="contato"
+                >
+                  Contato
+                </HeaderItem>
               </ul>
             </div>
           </div>
@@ -472,6 +476,63 @@ class Header extends React.Component {
       </nav>
     );
   }
+}
+
+function HeaderItem({ children, href, selected, to }) {
+  const isSelected = selected === to ? "selected" : ""
+  return (
+    <>
+      <li className={`${to} ${isSelected}`}>
+        <HeaderLink href={href}>
+          {children}
+        </HeaderLink>
+      </li>
+      <style jsx>{
+        `          
+          li {
+            display: inline-block;
+            padding: 10px;
+            width: 100px;
+            font-size: 0.8em;
+            text-align: center;
+            margin-left: 1px;
+            border: 1px solid transparent;
+            border-top: 4px solid rgba(24, 65, 109, 0.15);
+          }
+          li:hover {
+            background: #ffb151;
+            color: #fff;
+            cursor: pointer;
+          }
+          li.selected {
+            background: #ffb151;
+          }
+        `
+      }</style>
+    </>
+  )
+}
+
+function HeaderLink({ children, href }) {
+  if (href) {
+    return (
+      <>
+        <Link href={href} passHref>
+          <a>{children}</a>
+        </Link>
+        <style jsx>{
+          `
+            a {
+              color: #333 !important;
+              text-decoration: none;
+              display: block;
+            }
+          `
+        }</style>
+      </>
+    )
+  }
+  return children
 }
 
 export default Header;

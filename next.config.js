@@ -6,7 +6,17 @@ const prod = process.env.NODE_ENV === 'production';
 module.exports = {
     exportPathMap: () => ({
         '/': { page: '/' },
-        '/contact': { page: '/contact' },
+        '/projeto': { page: '/projeto' },
+        '/contato': { page: '/contact' },
+        '/download': { page: '/download' },
     }),
-    assetPrefix: prod ? 'https://lmedesenvolvimento.github.io/luz-do-saber-home-page/' : '',
+    publicRuntimeConfig: {
+        basePath: ''
+    },
+    assetPrefix: prod ? 'http://fundamental.luzdosaber.virtual.ufc.br/' : '',
 }
+
+// GITHUB
+// publicRuntimeConfig: {
+//     basePath: prod ? '/luz-do-saber-fundamental' : ''
+// },
