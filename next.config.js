@@ -13,7 +13,7 @@ module.exports = {
     publicRuntimeConfig: {
         basePath: ''
     },
-    assetPrefix: prod ? 'http://fundamental.luzdosaber.virtual.ufc.br/' : '',
+    assetPrefix: prod ? 'https://eja.luzdosaber.virtual.ufc.br/' : '',
 }
 
 // GITHUB

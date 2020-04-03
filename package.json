@@ -16,10 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lmedesenvolvimento/luz-do-saber-home-page/issues"
-  },
-  "homepage": "https://github.com/lmedesenvolvimento/luz-do-saber-home-page#readme",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "cross-env": "^7.0.2",
