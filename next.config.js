@@ -8,6 +8,7 @@ module.exports = {
         '/': { page: '/' },
         '/projeto': { page: '/projeto' },
         '/contato': { page: '/contact' },
+        '/creditos': { page: '/creditos' },
         '/download': { page: '/download' },
     }),
     publicRuntimeConfig: {
