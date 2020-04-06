@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/download.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/creditos.js"],{
 
 /***/ "./components/Base-Layout.js":
 /*!***********************************!*\
@@ -1647,21 +1647,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdownload&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fdownload.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcreditos&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fcreditos.js!./":
 /*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdownload&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fdownload.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcreditos&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fcreditos.js ***!
   \************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/download", function() {
-      var mod = __webpack_require__(/*! ./pages/download.js */ "./pages/download.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/creditos", function() {
+      var mod = __webpack_require__(/*! ./pages/creditos.js */ "./pages/creditos.js")
       if(true) {
-        module.hot.accept(/*! ./pages/download.js */ "./pages/download.js", function() {
-          if(!next.router.components["/download"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/download.js */ "./pages/download.js")
-          next.router.update("/download", updatedPage)
+        module.hot.accept(/*! ./pages/creditos.js */ "./pages/creditos.js", function() {
+          if(!next.router.components["/creditos"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/creditos.js */ "./pages/creditos.js")
+          next.router.update("/creditos", updatedPage)
         })
       }
       return mod
@@ -6676,16 +6676,16 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/download.js":
+/***/ "./pages/creditos.js":
 /*!***************************!*\
-  !*** ./pages/download.js ***!
+  !*** ./pages/creditos.js ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Projeto; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Creditos; });
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -6693,182 +6693,317 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 /* harmony import */ var _components_Base_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Base-Layout */ "./components/Base-Layout.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-var _jsxFileName = "/home/juniorgomes/Documents/luz-do-saber/portais/luz-do-saber-eja/pages/download.js";
+var _jsxFileName = "/home/juniorgomes/Documents/luz-do-saber/portais/luz-do-saber-eja/pages/creditos.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-function Projeto() {
-  var links = [{
-    title: 'Luz do Saber - 1º Ano - Caderno de Orientações Didáticas',
-    src: 'static/downloads/Luz do Saber - 1º Ano - Caderno de Orientações Didáticas.pdf'
-  }, {
-    title: 'Luz do Saber - 1º ano',
-    src: 'static/downloads/Luz do Saber - 1º ano.pdf'
-  }, {
-    title: 'Luz do Saber - 2º Ano - Caderno de Orientações Didáticas',
-    src: 'static/downloads/Luz do Saber - 2º Ano - Caderno de Orientações Didáticas.pdf'
-  }, {
-    title: 'Luz do Saber - 2º ano',
-    src: 'static/downloads/Luz do Saber - 2º ano.pdf'
-  }];
+function Creditos() {
   return __jsx("div", {
-    id: "download",
-    className: "jsx-3151260847",
+    id: "creditos",
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, __jsx(_components_Base_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 8,
       columnNumber: 13
     }
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    selected: "download",
+    selected: "creditos",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 9,
       columnNumber: 17
     }
   }), __jsx("section", {
-    className: "jsx-3151260847" + " " + "banner full-width",
+    className: "jsx-2262531077" + " " + "banner full-width",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 17
+    }
+  }, __jsx("div", {
+    className: "jsx-2262531077" + " " + "pagination",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 21
+    }
+  }, __jsx("span", {
+    className: "jsx-2262531077" + " " + "pagination-item",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 23
+    }
+  }, "principal"), " ", __jsx("span", {
+    className: "jsx-2262531077" + " " + "pagination-item",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 74
+    }
+  }, "/"), " ", __jsx("span", {
+    className: "jsx-2262531077" + " " + "pagination-item",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 117
+    }
+  }, "cr\xE9ditos")), __jsx("div", {
+    className: "jsx-2262531077" + " " + "container",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 21
+    }
+  }, __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 23
+    }
+  }), __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 23
+    }
+  }), __jsx("p", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 23
+    }
+  }, __jsx("h3", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 25
+    }
+  }, "Coordenador do Projeto e Cientista-Chefe Funcap"), "Jorge Herbert Soares de Lira", __jsx("h3", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 25
+    }
+  }, "Coordenador T\xE9cnico"), "Henrique S\xE9rgio Lima Pequeno", __jsx("h3", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 25
+    }
+  }, "Coordenador Acad\xEAmico"), "George Allan Menezes Gomes", __jsx("h3", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 25
+    }
+  }, "Gerente de Projeto"), "Francisco Gilson Gomes J\xFAnior", __jsx("h3", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 25
+    }
+  }, "Coordenador Pedag\xF3gico"), "Marcos Dion\xEDsio Ribeiro do Nascimento", __jsx("h3", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28,
-      columnNumber: 17
+      columnNumber: 25
     }
-  }, __jsx("div", {
-    className: "jsx-3151260847" + " " + "pagination",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 21
-    }
-  }, __jsx("span", {
-    className: "jsx-3151260847" + " " + "pagination-item",
+  }, "Diretor de Arte"), "Ant\xF4nio Jos\xE9 Melo Leite J\xFAnior", __jsx("h3", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30,
       columnNumber: 25
     }
-  }, "principal"), " ", __jsx("span", {
-    className: "jsx-3151260847" + " " + "pagination-item",
+  }, "Equipe Pedag\xF3gica"), "Eliziana do Nascimento Mendon\xE7a", __jsx("br", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 76
+      lineNumber: 31,
+      columnNumber: 56
     }
-  }, "/"), " ", __jsx("span", {
-    className: "jsx-3151260847" + " " + "pagination-item",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 119
-    }
-  }, "download")), __jsx("div", {
-    className: "jsx-3151260847" + " " + "__content",
+  }), "Ellen Damares Felipe de Queiroz", __jsx("h3", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33,
-      columnNumber: 21
+      columnNumber: 25
     }
-  }, __jsx("h1", {
-    className: "jsx-3151260847" + " " + "heading",
+  }, "Ilustradores e Designers"), "Franscisca N\xE1dia Moura Lopes", __jsx("br", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34,
-      columnNumber: 25
+      columnNumber: 53
     }
-  }, "Downloads"), __jsx(LinkList, {
-    items: links,
+  }), "M\xE1rcio Moreira dos Santos Filho", __jsx("br", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35,
-      columnNumber: 25
+      columnNumber: 56
     }
-  })), __jsx("div", {
-    className: "jsx-3151260847" + " " + "footer",
+  }), "Nat\xE1lia Prata Moraes", __jsx("br", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 21
+      lineNumber: 36,
+      columnNumber: 45
     }
-  }, __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), "Yarick Ivens da Silva Santos", __jsx("h3", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38,
       columnNumber: 25
     }
-  })))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3151260847",
-    __self: this
-  }, ".pagination.jsx-3151260847{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:absolute;background:#FFB151;border-radius:0;width:100%;height:50px;padding:0 90px;color:#fff;font-size:0.8em;text-transform:uppercase;}.pagination-item.jsx-3151260847{margin-right:10px;}#download.jsx-3151260847 .__content.jsx-3151260847{margin:64px 48px 24px;}#download.jsx-3151260847 .__content.jsx-3151260847 p.jsx-3151260847{font-size:21px;margin:48px 0px;}.heading.jsx-3151260847{padding:16px 0px;margin-bottom:24px;border-bottom:1px solid grey;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1bmlvcmdvbWVzL0RvY3VtZW50cy9sdXotZG8tc2FiZXIvcG9ydGFpcy9sdXotZG8tc2FiZXItZWphL3BhZ2VzL2Rvd25sb2FkLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTBDZ0IsQUFHc0MsQUFhSyxBQUdJLEFBR1AsQUFJRSxlQUhELEVBSUcsQ0FWdkIsSUFHQSxTQUlBLEtBSWlDLDZCQUNqQyxTQXpCdUIsNkZBQ0Qsa0JBQ0MsbUJBQ0gsZ0JBQ0wsV0FDQyxZQUNHLGVBQ0osV0FDSyxnQkFDUyx5QkFDN0IiLCJmaWxlIjoiL2hvbWUvanVuaW9yZ29tZXMvRG9jdW1lbnRzL2x1ei1kby1zYWJlci9wb3J0YWlzL2x1ei1kby1zYWJlci1lamEvcGFnZXMvZG93bmxvYWQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0hlYWRlclwiO1xuaW1wb3J0IEJhc2VMYXlvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvQmFzZS1MYXlvdXRcIjtcbmltcG9ydCBGb290ZXIgZnJvbSAnLi4vY29tcG9uZW50cy9Gb290ZXInO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQcm9qZXRvKCl7XG4gICAgY29uc3QgbGlua3MgPSBbXG4gICAgICAgIHtcbiAgICAgICAgICAgIHRpdGxlOiAnTHV6IGRvIFNhYmVyIC0gMcK6IEFubyAtIENhZGVybm8gZGUgT3JpZW50YcOnw7VlcyBEaWTDoXRpY2FzJyxcbiAgICAgICAgICAgIHNyYzogJ3N0YXRpYy9kb3dubG9hZHMvTHV6IGRvIFNhYmVyIC0gMcK6IEFubyAtIENhZGVybm8gZGUgT3JpZW50YcOnw7VlcyBEaWTDoXRpY2FzLnBkZicsXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICAgIHRpdGxlOiAnTHV6IGRvIFNhYmVyIC0gMcK6IGFubycsXG4gICAgICAgICAgICBzcmM6ICdzdGF0aWMvZG93bmxvYWRzL0x1eiBkbyBTYWJlciAtIDHCuiBhbm8ucGRmJyxcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgICAgdGl0bGU6ICdMdXogZG8gU2FiZXIgLSAywrogQW5vIC0gQ2FkZXJubyBkZSBPcmllbnRhw6fDtWVzIERpZMOhdGljYXMnLFxuICAgICAgICAgICAgc3JjOiAnc3RhdGljL2Rvd25sb2Fkcy9MdXogZG8gU2FiZXIgLSAywrogQW5vIC0gQ2FkZXJubyBkZSBPcmllbnRhw6fDtWVzIERpZMOhdGljYXMucGRmJyxcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgICAgdGl0bGU6ICdMdXogZG8gU2FiZXIgLSAywrogYW5vJyxcbiAgICAgICAgICAgIHNyYzogJ3N0YXRpYy9kb3dubG9hZHMvTHV6IGRvIFNhYmVyIC0gMsK6IGFuby5wZGYnLFxuICAgICAgICB9LFxuICAgIF1cbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2IGlkPVwiZG93bmxvYWRcIj5cbiAgICAgICAgICAgIDxCYXNlTGF5b3V0PlxuICAgICAgICAgICAgICAgIDxIZWFkZXIgc2VsZWN0ZWQ9XCJkb3dubG9hZFwiIC8+XG4gICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiYmFubmVyIGZ1bGwtd2lkdGhcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdpbmF0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJwYWdpbmF0aW9uLWl0ZW1cIj5wcmluY2lwYWw8L3NwYW4+IDxzcGFuIGNsYXNzTmFtZT1cInBhZ2luYXRpb24taXRlbVwiPi88L3NwYW4+IDxzcGFuIGNsYXNzTmFtZT1cInBhZ2luYXRpb24taXRlbVwiPmRvd25sb2FkPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIl9fY29udGVudFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImhlYWRpbmdcIj5Eb3dubG9hZHM8L2gxPlxuICAgICAgICAgICAgICAgICAgICAgICAgPExpbmtMaXN0IGl0ZW1zPXtsaW5rc30gLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9vdGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8Rm9vdGVyIC8+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvc2VjdGlvbj5cbiAgICAgICAgICAgIDwvQmFzZUxheW91dD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3g+e1xuICAgICAgICAgICAgICAgIGBcbiAgICAgICAgICAgICAgICAgICAgLnBhZ2luYXRpb24ge1xuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgICAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiAjRkZCMTUxO1xuICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMDtcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA1MHB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZzogMCA5MHB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDAuOGVtO1xuICAgICAgICAgICAgICAgICAgICAgICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAucGFnaW5hdGlvbi1pdGVtIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAjZG93bmxvYWQgLl9fY29udGVudHtcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbjogNjRweCA0OHB4IDI0cHg7XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgI2Rvd25sb2FkIC5fX2NvbnRlbnQgcCB7XG4gICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDIxcHg7XG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW46IDQ4cHggMHB4O1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIC5oZWFkaW5nIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDE2cHggMHB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMjRweDtcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBncmV5O1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYFxuICAgICAgICAgICAgfTwvc3R5bGU+XG4gICAgICAgIDwvZGl2PlxuICAgIClcbn1cblxuZnVuY3Rpb24gTGlua0xpc3QgKHsgaXRlbXMgfSkge1xuICAgIHJldHVybiAoXG4gICAgICAgIDx1bD5cbiAgICAgICAgICAgIHtpdGVtcy5tYXAoKHsgdGl0bGUsIHNyYyB9KSA9PiB7XG4gICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgICAgPGxpPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj17c3JjfSB0YXJnZXQ9XCJfYmxhbmtcIiBkb3dubG9hZCB0aXRsZT17dGl0bGV9PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt0aXRsZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICB9KX1cbiAgICAgICAgPC91bD5cbiAgICApXG59XG4iXX0= */\n/*@ sourceURL=/home/juniorgomes/Documents/luz-do-saber/portais/luz-do-saber-eja/pages/download.js */"));
-}
-
-function LinkList(_ref) {
-  var _this = this;
-
-  var items = _ref.items;
-  return __jsx("ul", {
+  }, "Desenvolvedores"), "Ant\xF4nio Nathan Serra Souza", __jsx("br", {
+    className: "jsx-2262531077",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 9
+      lineNumber: 39,
+      columnNumber: 51
     }
-  }, items.map(function (_ref2) {
-    var title = _ref2.title,
-        src = _ref2.src;
-    return __jsx("li", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 83,
-        columnNumber: 21
-      }
-    }, __jsx("a", {
-      href: src,
-      target: "_blank",
-      download: true,
-      title: title,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 84,
-        columnNumber: 25
-      }
-    }, title));
-  }));
+  }), "Damis Iuri Garcia do Vale", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 50
+    }
+  }), "Lucas Monteiro Ribeiro", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 47
+    }
+  }), "Lu\xEDs Eduardo Regis de Oliveira", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 55
+    }
+  }), "Marcos Rodrigo da Silva Lira", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 53
+    }
+  }), "M\xE1rio Silva Ribeiro", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 44
+    }
+  }), "Desenvolvedores Back-end", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 49
+    }
+  }), "Bianca Stephani Barone Martins", __jsx("br", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 55
+    }
+  }), "Wedson Lima de Sousa", __jsx("h3", {
+    className: "jsx-2262531077",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 25
+    }
+  }, "Org\xE3o Fomentador"), "Funda\xE7\xE3o Cearense de Apoio ao Desenvolvimento Cient\xEDfico e Tecnol\xF3gico (Funcap)")), __jsx("div", {
+    className: "jsx-2262531077" + " " + "footer",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 21
+    }
+  }, __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 25
+    }
+  })))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2262531077",
+    __self: this
+  }, ".pagination.jsx-2262531077{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:absolute;background:#FFB151;border-radius:0;width:100%;height:50px;padding:0 90px;color:#fff;font-size:0.8em;text-transform:uppercase;margin-bottom:50px;}.pagination-item.jsx-2262531077{margin-right:10px;}#projeto.jsx-2262531077 .__content.jsx-2262531077{margin:64px 48px 24px;}#projeto.jsx-2262531077 .__content.jsx-2262531077 p.jsx-2262531077{font-size:21px;margin:48px 0px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1bmlvcmdvbWVzL0RvY3VtZW50cy9sdXotZG8tc2FiZXIvcG9ydGFpcy9sdXotZG8tc2FiZXItZWphL3BhZ2VzL2NyZWRpdG9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXlEZ0IsQUFHc0MsQUFjSyxBQUdJLEFBR1AsZUFDQyxHQU5wQixJQUdBLFNBSUEsMkNBckJ1Qiw2RkFDRCxrQkFDQyxtQkFDSCxnQkFDTCxXQUNDLFlBQ0csZUFDSixXQUNLLGdCQUNTLHlCQUNOLG1CQUN2QiIsImZpbGUiOiIvaG9tZS9qdW5pb3Jnb21lcy9Eb2N1bWVudHMvbHV6LWRvLXNhYmVyL3BvcnRhaXMvbHV6LWRvLXNhYmVyLWVqYS9wYWdlcy9jcmVkaXRvcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvSGVhZGVyXCI7XG5pbXBvcnQgQmFzZUxheW91dCBmcm9tIFwiLi4vY29tcG9uZW50cy9CYXNlLUxheW91dFwiO1xuaW1wb3J0IEZvb3RlciBmcm9tICcuLi9jb21wb25lbnRzL0Zvb3Rlcic7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENyZWRpdG9zKCl7XG4gICAgcmV0dXJuIChcbiAgICAgICAgPGRpdiBpZD1cImNyZWRpdG9zXCI+XG4gICAgICAgICAgICA8QmFzZUxheW91dD5cbiAgICAgICAgICAgICAgICA8SGVhZGVyIHNlbGVjdGVkPVwiY3JlZGl0b3NcIiAvPlxuICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImJhbm5lciBmdWxsLXdpZHRoXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnaW5hdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInBhZ2luYXRpb24taXRlbVwiPnByaW5jaXBhbDwvc3Bhbj4gPHNwYW4gY2xhc3NOYW1lPVwicGFnaW5hdGlvbi1pdGVtXCI+Lzwvc3Bhbj4gPHNwYW4gY2xhc3NOYW1lPVwicGFnaW5hdGlvbi1pdGVtXCI+Y3LDqWRpdG9zPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICAgIDxici8+XG4gICAgICAgICAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgICAgICAgICA8aDM+Q29vcmRlbmFkb3IgZG8gUHJvamV0byBlIENpZW50aXN0YS1DaGVmZSBGdW5jYXA8L2gzPlxuICAgICAgICAgICAgICAgICAgICAgICAgSm9yZ2UgSGVyYmVydCBTb2FyZXMgZGUgTGlyYVxuICAgICAgICAgICAgICAgICAgICAgICAgPGgzPkNvb3JkZW5hZG9yIFTDqWNuaWNvPC9oMz5cbiAgICAgICAgICAgICAgICAgICAgICAgIEhlbnJpcXVlIFPDqXJnaW8gTGltYSBQZXF1ZW5vXG4gICAgICAgICAgICAgICAgICAgICAgICA8aDM+Q29vcmRlbmFkb3IgQWNhZMOqbWljbzwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICBHZW9yZ2UgQWxsYW4gTWVuZXplcyBHb21lc1xuICAgICAgICAgICAgICAgICAgICAgICAgPGgzPkdlcmVudGUgZGUgUHJvamV0bzwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICBGcmFuY2lzY28gR2lsc29uIEdvbWVzIErDum5pb3JcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMz5Db29yZGVuYWRvciBQZWRhZ8OzZ2ljbzwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICBNYXJjb3MgRGlvbsOtc2lvIFJpYmVpcm8gZG8gTmFzY2ltZW50b1xuICAgICAgICAgICAgICAgICAgICAgICAgPGgzPkRpcmV0b3IgZGUgQXJ0ZTwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICBBbnTDtG5pbyBKb3PDqSBNZWxvIExlaXRlIErDum5pb3JcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMz5FcXVpcGUgUGVkYWfDs2dpY2E8L2gzPlxuICAgICAgICAgICAgICAgICAgICAgICAgRWxpemlhbmEgZG8gTmFzY2ltZW50byBNZW5kb27Dp2E8YnIvPlxuICAgICAgICAgICAgICAgICAgICAgICAgRWxsZW4gRGFtYXJlcyBGZWxpcGUgZGUgUXVlaXJvelxuICAgICAgICAgICAgICAgICAgICAgICAgPGgzPklsdXN0cmFkb3JlcyBlIERlc2lnbmVyczwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICBGcmFuc2Npc2NhIE7DoWRpYSBNb3VyYSBMb3Blczxici8+XG4gICAgICAgICAgICAgICAgICAgICAgICBNw6FyY2lvIE1vcmVpcmEgZG9zIFNhbnRvcyBGaWxobzxici8+XG4gICAgICAgICAgICAgICAgICAgICAgICBOYXTDoWxpYSBQcmF0YSBNb3JhZXM8YnIvPlxuICAgICAgICAgICAgICAgICAgICAgICAgWWFyaWNrIEl2ZW5zIGRhIFNpbHZhIFNhbnRvc1xuICAgICAgICAgICAgICAgICAgICAgICAgPGgzPkRlc2Vudm9sdmVkb3JlczwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICBBbnTDtG5pbyBOYXRoYW4gU2VycmEgU291emE8YnIvPlxuICAgICAgICAgICAgICAgICAgICAgICAgRGFtaXMgSXVyaSBHYXJjaWEgZG8gVmFsZTxici8+XG4gICAgICAgICAgICAgICAgICAgICAgICBMdWNhcyBNb250ZWlybyBSaWJlaXJvPGJyLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIEx1w61zIEVkdWFyZG8gUmVnaXMgZGUgT2xpdmVpcmE8YnIvPlxuICAgICAgICAgICAgICAgICAgICAgICAgTWFyY29zIFJvZHJpZ28gZGEgU2lsdmEgTGlyYTxici8+XG4gICAgICAgICAgICAgICAgICAgICAgICBNw6FyaW8gU2lsdmEgUmliZWlybzxici8+XG4gICAgICAgICAgICAgICAgICAgICAgICBEZXNlbnZvbHZlZG9yZXMgQmFjay1lbmQ8YnIvPlxuICAgICAgICAgICAgICAgICAgICAgICAgQmlhbmNhIFN0ZXBoYW5pIEJhcm9uZSBNYXJ0aW5zPGJyLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIFdlZHNvbiBMaW1hIGRlIFNvdXNhXG4gICAgICAgICAgICAgICAgICAgICAgICA8aDM+T3Jnw6NvIEZvbWVudGFkb3I8L2gzPlxuICAgICAgICAgICAgICAgICAgICAgICAgRnVuZGHDp8OjbyBDZWFyZW5zZSBkZSBBcG9pbyBhbyBEZXNlbnZvbHZpbWVudG8gQ2llbnTDrWZpY28gZSBUZWNub2zDs2dpY28gKEZ1bmNhcClcbiAgICAgICAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZvb3RlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPEZvb3RlciAvPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L3NlY3Rpb24+XG4gICAgICAgICAgICA8L0Jhc2VMYXlvdXQ+XG4gICAgICAgICAgICA8c3R5bGUganN4PntcbiAgICAgICAgICAgICAgICBgXG4gICAgICAgICAgICAgICAgICAucGFnaW5hdGlvbiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6ICNGRkIxNTE7XG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiAwO1xuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDUwcHg7XG4gICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiAwIDkwcHg7XG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZmZjtcbiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMC44ZW07XG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogNTBweDtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAucGFnaW5hdGlvbi1pdGVtIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAjcHJvamV0byAuX19jb250ZW50e1xuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiA2NHB4IDQ4cHggMjRweDtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAjcHJvamV0byAuX19jb250ZW50IHAge1xuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMXB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiA0OHB4IDBweDtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGBcbiAgICAgICAgICAgIH08L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICApXG59XG4iXX0= */\n/*@ sourceURL=/home/juniorgomes/Documents/luz-do-saber/portais/luz-do-saber-eja/pages/creditos.js */"));
 }
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!****************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fdownload&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fdownload.js ***!
+  !*** multi next-client-pages-loader?page=%2Fcreditos&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fcreditos.js ***!
   \****************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdownload&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fdownload.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdownload&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fdownload.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcreditos&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fcreditos.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcreditos&absolutePagePath=%2Fhome%2Fjuniorgomes%2FDocuments%2Fluz-do-saber%2Fportais%2Fluz-do-saber-eja%2Fpages%2Fcreditos.js!./");
 
 
 /***/ }),
@@ -6884,5 +7019,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=download.js.map
+},[[4,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=creditos.js.map
