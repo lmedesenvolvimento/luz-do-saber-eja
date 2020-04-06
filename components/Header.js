@@ -94,14 +94,19 @@ class Header extends React.Component {
                 >
                   Downloads
                 </HeaderItem>
+                {/*
                 <HeaderItem to="tutorial">
                   Tutorial
                 </HeaderItem>
                 <HeaderItem to="forum">
                   Fórum
                 </HeaderItem>
-                <HeaderItem to="creditos">
-                  Créditos
+                */}
+                <HeaderItem
+                  href="/creditos"
+                  selected={this.props.selected}
+                  to="creditos">
+                  CRÉDITOS
                 </HeaderItem>
                 <HeaderItem
                   href="/contato"
@@ -110,6 +115,7 @@ class Header extends React.Component {
                 >
                   Contato
                 </HeaderItem>
+
               </ul>
             </div>
           </div>
@@ -488,7 +494,7 @@ function HeaderItem({ children, href, selected, to }) {
         </HeaderLink>
       </li>
       <style jsx>{
-        `          
+        `
           li {
             display: inline-block;
             padding: 10px;
